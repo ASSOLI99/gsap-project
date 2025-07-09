@@ -125,7 +125,7 @@ export const BentoCard = ({
 const Features = () => {
   return (
     <section className="bg-black pb-52">
-      <div className="container mx-auto px-3 md:px-10">
+      <div className="container mx-auto px-3 md:px-10 ">
         <div className="px-5 py-32">
           <p className="font-circular-web text-lg text-blue-50">
             {" "}
@@ -139,8 +139,7 @@ const Features = () => {
           </p>
         </div>
 
-        <BentoTile className="border-fuchsia-50 relative mb-7 h-96 w-full overflow-hidden rounded-md md:h-[65vh]">
-          {/* isComingSoon: default value to it be as true */}
+        {/* <BentoTile className="border-fuchsia-50 relative mb-7 h-96 w-full overflow-hidden rounded-md md:h-[65vh]">
           <BentoCard
             src="videos/feature-1.mp4"
             title={
@@ -151,10 +150,10 @@ const Features = () => {
             description="A cross-platform metagame app, turning your activities across Web2 and Web3 games into a rewarding adventure."
             isComingSoon
           />
-        </BentoTile>
+        </BentoTile> */}
 
-        <div className="flex flex-col lg:flex-row flex-wrap">
-          <BentoTile className="uppercase md:text-6xl text-4xl text-black w-full h-[60vh] lg:w-1/2">
+        <div className="flex flex-col lg:flex-row flex-wrap gap-y-8">
+          <BentoTile className="uppercase md:text-6xl text-4xl text-black w-full h-[60vh] lg:w-1/2 px-3">
             <BentoCard
               src="videos/feature-2.mp4"
               title={
@@ -164,11 +163,11 @@ const Features = () => {
               }
               description="An anime and gaming-inspired NFT collection - the IP primed for expansion."
               isComingSoon
-              dark
+              
             />
           </BentoTile>
           {/* What mean ms-32 and ms-0 */}
-          <BentoTile className="uppercase md:text-6xl text-4xl text-black w-full h-[60vh] lg:w-1/2">
+          <BentoTile className="uppercase md:text-6xl text-4xl text-black w-full h-[60vh] lg:w-1/2 px-3">
             <BentoCard
               src="videos/feature-3.mp4"
               title={
@@ -181,7 +180,7 @@ const Features = () => {
             />
           </BentoTile>
           {/* me-14 */}
-          <BentoTile className="w-full h-[60vh] lg:w-1/2">
+          <BentoTile className="w-full h-[60vh] lg:w-1/2 px-3">
             <BentoCard
               src="videos/feature-4.mp4"
               title={
@@ -194,9 +193,9 @@ const Features = () => {
             />
           </BentoTile>
           {/* me-14 */}
-          <BentoTile className="w-full h-[60vh] lg:w-1/2">
+          <BentoTile className="w-full h-[60vh] lg:w-1/2 px-3">
             <BentoCard
-              src="videos/feature-4.mp4"
+              src="videos/feature-6.mp4"
               title={
                 <>
                   az<b>u</b>l
@@ -207,7 +206,7 @@ const Features = () => {
             />
           </BentoTile>
           <BentoTile className="bento-tilt_2 lg:w-full">
-            <div className="flex size-full flex-col justify-between bg-violet-300 p-5">
+            <div className="flex size-full flex-col justify-between bg-red-600 p-5">
               <h1 className="bento-title max-w-64 text-black">
                 {" "}
                 M<b>o</b>re co<b>m</b>ing s<b>o</b>on.{" "}
